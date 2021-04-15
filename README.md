@@ -1,6 +1,6 @@
-# Project
+# CCEE411 - Web Project
 
-by some rhu students
+by rhu students
 
 Step 1: clone file and paste in xampp/htdocs
 
@@ -8,4 +8,4 @@ Step 2: create new db in PHPMyAdmin, name it "data", or name it as you like by e
 
 Step 3: import data_table.sql into db
 
-step 4: run localhost/finaldraft
+step 4: run localhost/finaldraft 
