@@ -8,5 +8,4 @@ Step 2: create new db in PHPMyAdmin, name it "prof"
 
 Step 3: import data_table.sql into db
 
-step 4: run localhost/finalproject
-
+step 4: run localhost/finaldraft
