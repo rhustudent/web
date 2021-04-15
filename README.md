@@ -1,4 +1,4 @@
-# web projects
+# Web Projec
 
 by some rhu students
 
