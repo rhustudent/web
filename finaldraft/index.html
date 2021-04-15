@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Responsive-->
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <title>Real Estate website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>R</span>eal <span>E</span>state</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#sellProperty" data-after="Sell">Sell</a></li>
+            <li><a href="#projects" data-after="Projects">Portfolio</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="Login.php">Login</a></li>
+            <li><a href="signup.php">Signup</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Home Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Welcome, <span></span></h1>
+        <h1>To The Real Estate <span></span></h1>
+        <h1>Website <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Home Section  -->
+
+
+
+
+
+
+  <!--services Section -->
+  <section id="services">
+    <br><br>
+    <br><br>
+    <br><br>
+    <h1 class="section-title">Serv<span>i</span>ces</h1><br><br>
+    <h2 style="text-align: center">Pick your apartment where ever you want</h2><br><br>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 /4 </div>
+        <img src="img/beirut3.jpg" style="width:100%; height: 340px;">
+        <div class="text">Beirut Terrace
+
+        </div>
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/skygate-1.jpg" style="width:100%">
+        <div class="text">Skygate
+
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/Faraya.jpg" style="width:100%">
+        <div class="text">Austria luxury apartments </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/Admir_adma.jpeg" style="width:100%">
+        <div class="text">Admir adma</div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <!-- sidshow script-->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+    <!-- end of slideshow -->
+    <!-- beirut terrace info and pictures -->
+    <br><br><br><br>
+    <table>
+      <tr id="tr1">
+        <div style="margin-left: 30px;" class="div1">
+          <h2>Beirut terrace</h2><span id="dots">
+            <h3> For more info:</h3>
+          </span><span id="more">
+
+            <h4>location: Minet al hoss</h4>
+            <p>is a unique 25-floor, 110-meter waterfront residential tower, located in Beirut's Central District, the
+              most desirable residential area in Lebanon</p>
+            <div class="row">
+              <div class="column">
+                <img src="img/beirut_terrace2.jpg" alt="img1" style="width:100%" height="300px;">
+              </div>
+              <div class="column">
+                <img src="img/beirutterrace.jpg" alt="img2" style="width:100%" height="300px;">
+              </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        </span>
+      </tr>
+
+      <button class="cta" style="margin-left: 30px;color: black;font-size: 1rem;margin-top: 0px;" onclick="myFunction()"
+        id="myBtn">See more</button>
+      <!-- end of austria-->
+
+
+
+
+      <!-- sky gate pictures and info-->
+      <tr id="tr1">
+        <br><br>
+        <div style="margin-left: 30px;" class="div1">
+          <h2>Sky Gate </h2><span id="dots2">
+            <h3>For more info:</h3>
+          </span><span id="Rmore">
+
+            <h4>location: Ashrafie</h4>
+            <p>From its completion in 2014 until late 2016, Sky Gate was the tallest structure in Lebanon. The tower is
+              composed of four superimposed block-like sections that accommodate 42 floors in an unconventional' design.
+              Sky Gate is situated on the peak-point of Achrafieh, offering a 360 degree view of Beirut and Mount
+              Lebanon.</p>
+            <div class="row">
+              <div class="column2">
+                <img src="img/skyinside.jpg" alt="img11" id="Skygate2" style="width:100%" height="300px;">
+              </div>
+              <div class="column2">
+                <img src="img/skygate3.jpeg" alt="img12" id="Skygate3" style="width:100%" height="300px;">
+              </div>
+
+            </div>
+          </span>
+
+      </tr>
+      <button class="cta" style="margin-left: 30px;color: black;font-size: 1rem;margin-top: 0px;"
+        onclick="myFunction2()" id="myBtn2">See more</button>
+
+      <!-- end of skygate-->
+      <tr id="tr1">
+        <br><br>
+        <div style="margin-left: 30px;" class="div1">
+          <h2>Admir Adma</h2><span id="dots3">
+            <h3>For more info:</h3>
+          </span><span id="moreR">
+            <h4>location: Admir Adma</h4>
+            <p>Luxury Apartment for sale 153m.This apartment is on the fourth floor
+
+              It has 3 bedrooms one of them is a master bedroom 3 bathroom dining room kitchen living room
+
+              maid’s room
+
+              1 parking for 2 cars
+
+              Amenities</p>
+            <div class="row">
+              <div class="column2">
+                <img src="img/Admir2.jpeg" alt="img4" style="width:100%" height="300px;">
+              </div>
+              <div class="column2">
+                <img src="img/Admir3.jpeg" alt="img5" style="width:100%;height=300px;">
+              </div>
+          </span>
+        </div>
+      </tr>
+      <button class="cta" style="margin-left: 30px;color: black;font-size: 1rem;margin-top: 0px;"
+        onclick="myFunction3()" id="myBtn3">See more</button>
+      <!-- end of adma-->
+      <tr id="tr1">
+        <br><br>
+
+        <div style="margin-left: 30px;" class="div1">
+          <h2>Austria Luxury Apartments</h2><span id="dots4">
+            <h3>For more info:</h3>
+          </span><span id="RmoreR">
+            <h4>Faraya Mount lebanon</h4>
+            <p>Located at the heart of Faraya mountains, Austria Luxury Apartments offers you a delightful stay with a
+              selection of wide, furnished and equipped apartments.
+              Guests will feel at home here, thanks to the useful kitchenettes and the sofa beds in all of the rooms in
+              addition to an impeccable concierge service and a plum location. </p>
+            <div class="row">
+              <div class="column2">
+                <img src="img/Austria1.jpg" alt="img6" style="width:100%" height="300px;">
+              </div>
+              <div class="column2">
+                <img src="img/Austria2.jpg" alt="img7" style="width:100%" height="300px;">
+              </div>
+          </span>
+        </div>
+      </tr>
+      <button class="cta" style="margin-left: 30px;color: black;font-size: 1rem;margin-top: 0px;"
+        onclick="myFunction4()" id="myBtn4">See more</button>
+      <!-- end of austria-->
+    </table>
+    </div>
+  </section>
+  <!-- End services Section  -->
+
+
+
+
+  <!--Sell Section -->
+
+  <section class="containerSell" id="sellProperty">
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <div>
+      <div>
+        <h1 Style="text-align: center" class="section-title">Sell Your <span>Property</span></h1>
+      </div><br /><br />
+      <h1 style="text-align: center;font-size: 20px"> For selling your property enter the following information</h1>
+      <br>
+      <div id="Prop_kind">
+        <h2 class="subtitle"> What is the kind of your property?</h2>
+        <table class="center" id="tableprop">
+
+          <tr>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 41 41">
+                  <defs>
+                    <path id="70iia" d="M106.42 455.48v-1h1v1z"></path>
+                    <path id="70iib" d="M126.36 455.48v-1h1v1z"></path>
+                    <path id="70iic" d="M106.42 471.94v-1h1v1z"></path>
+                    <path id="70iid" d="M126.36 471.94v-1h1v1z"></path>
+                    <path id="70iie" d="M105.92 461.96v-1h32.89v1z"></path>
+                    <path id="70iif"
+                      d="M138.6 451.89h-5.04v-1.2h5.04zm0 1.88h-5.04v-.7h5.04zm-6.26-4.28v5.49h7.48v-5.49z"></path>
+                    <path id="70iig"
+                      d="M139.84 460.8v1.24h1.23v.67h-37.9v-.67h1.32v-1.24h-1.31v-3.15h37.89v3.15zm-34.11-10.07h3.8v5.67h-3.8zm20.15 0h3.8v5.67h-3.8zm5.04 5.68v-6.92h-6.28v6.92h-13.87v-6.92h-6.28v6.92h-2.55v7.54h40.37v-7.54z">
+                    </path>
+                    <path id="70iih" d="M118.14 451.32h-5v-.64h5zm0 2.46h-5v-1.27h5zm-6.24-4.29v5.49h7.48v-5.49z">
+                    </path>
+                    <path id="70iii" d="M105.92 445.51v-1h32.89v1z"></path>
+                    <path id="70iij"
+                      d="M141.07 444.42h-1.23v1.23h1.23v.61h-37.9v-.61h1.32v-1.23h-1.31v-3.17h37.89v3.17zm-39.13-4.4v7.48h40.37v-7.48z">
+                    </path>
+                    <path id="70iik" d="M105.92 478.42v-1h32.89v1z"></path>
+                    <path id="70iil"
+                      d="M139.84 477.22v1.23h1.23v.73h-37.9v-.73h1.32v-1.23h-1.31v-3.08h37.89v3.08zm-34.11-10.04h3.8v5.72h-3.8zm20.15 0h3.8v5.72h-3.8zm5.04 5.72v-6.95h-6.28v6.95h-13.87v-6.95h-6.28v6.95h-2.55v7.51h40.37v-7.51z">
+                    </path>
+                    <path id="70iim" d="M118.14 468.41h-5v-1.27h5zm0 1.82h-5v-.62h5zm-6.24-4.28v5.49h7.48v-5.49z">
+                    </path>
+                    <path id="70iin" d="M138.6 470.24h-5.04v-3.1h5.04zm-6.26-4.29v5.49h7.48v-5.49z"></path>
+                  </defs>
+                  <g>
+                    <g transform="translate(-102 -440)">
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iia"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iib"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iic"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iid"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iie"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iif"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iig"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iih"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iii"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iij"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iik"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iil"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iim"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#70iin"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">Apartment</span>
+            </th>
+            </button>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 46 41">
+                  <defs>
+                    <path id="nkc0a"
+                      d="M442.1 456.6l-21.45-15.44a1.2 1.2 0 0 0-1.4 0L397.8 456.6c-.52.38-.64 1.1-.25 1.62.38.51 1.12.62 1.64.25l20.76-14.94 20.76 14.94a1.18 1.18 0 0 0 1.64-.25c.39-.52.27-1.24-.25-1.62z">
+                    </path>
+                    <path id="nkc0b"
+                      d="M436.5 459.3c-.65 0-1.18.52-1.18 1.16v18.55h-9.46v-10.13a5.88 5.88 0 0 0-5.91-5.82 5.88 5.88 0 0 0-5.92 5.82v10.13h-9.46v-18.55c0-.64-.52-1.16-1.18-1.16-.65 0-1.18.52-1.18 1.16v19.71c0 .64.53 1.17 1.18 1.17h11.83a1.17 1.17 0 0 0 1.18-1.17v-11.29c0-1.92 1.6-3.49 3.55-3.49a3.53 3.53 0 0 1 3.55 3.5v11.37c.05.6.56 1.08 1.18 1.08h11.82c.66 0 1.19-.53 1.19-1.17v-19.7c0-.65-.53-1.17-1.19-1.17z">
+                    </path>
+                  </defs>
+                  <g>
+                    <g transform="translate(-397 -441)">
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#nkc0a"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#nkc0b"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">House</span>/Villa
+            </th>
+            </button>
+          </tr>
+          <tr>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 43 41">
+                  <defs>
+                    <path id="ustfa"
+                      d="M719.29 456.12l5.2-4.97 5.2 4.97zm-6.36-7.4l4.48-4.26 4.47 4.26-4.47 4.26zm-7.8 7.4l5.2-4.97 5.18 4.97zm33.12 3.23l-19.54-18.62a1.96 1.96 0 0 0-2.6 0l-19.55 18.62a1.7 1.7 0 0 0 0 2.49 1.9 1.9 0 0 0 2.6.02l2.28-2.15h31.93l2.28 2.15c.36.34.83.5 1.3.5.47 0 .94-.18 1.3-.52a1.7 1.7 0 0 0 0-2.49z">
+                    </path>
+                    <path id="ustfb"
+                      d="M710.55 467c0-.68.59-1.24 1.3-1.24h2.88c.72 0 1.3.56 1.3 1.25v6.24c0 .7-.58 1.25-1.3 1.25h-2.88c-.71 0-1.3-.56-1.3-1.25zm8.23 0c0-.68.59-1.24 1.3-1.24h2.93c.72 0 1.3.56 1.3 1.25v6.24c0 .7-.58 1.25-1.3 1.25h-2.92c-.72 0-1.3-.56-1.3-1.25zm-16.51 11.73c0 1.06.92 1.9 2.03 1.9h26.24c1.1 0 2-.84 2-1.9V461.4h-30.27z">
+                    </path>
+                  </defs>
+                  <g>
+                    <g transform="translate(-696 -440)">
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#ustfa"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#ustfb"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">Chalet</span>
+            </th>
+            </button>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 41 41">
+                  <defs>
+                    <path id="hoa9a"
+                      d="M157.29 574.73h-5.38a.67.67 0 0 1 0-1.35c.13 0 .26.04.37.11a.67.67 0 0 0 1.02-.41 1.34 1.34 0 0 1 2.6 0 .67.67 0 0 0 1.02.41c.44-.28 1.04.07 1.04.57 0 .37-.3.67-.67.67zm-14.12-26.88v-4.05h2.68v4.05zm0 5.38v-4.05h2.68v4.05zm0 5.36v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm-1.35-26.88h-2.68v-4.05h2.68zm0 5.38h-2.68v-4.05h2.68zm0 5.36h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm-6.72-26.88v-4.05h2.68v4.05zm0 5.38v-4.05h2.68v4.05zm0 5.36v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm0 5.38v-4.03h2.68v4.03zm-1.35-26.88h-2.68v-4.05h2.68zm0 5.38h-2.68v-4.05h2.68zm0 5.36h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm0 5.38h-2.68v-4.03h2.68zm13.46-9.41h2.68v4.03h-2.68zm0-5.38h2.68v4.03h-2.68zm0-5.38h2.68v4.03h-2.68zm0-5.38h2.68v4.05h-2.68zm0-5.38h2.68v4.05h-2.68zm10.08 28.24c-.12 0-.24.01-.35.03a2.67 2.67 0 0 0-2.34-1.37c-1 0-1.88.53-2.35 1.37a2.02 2.02 0 0 0-2.24 2.66h-2.8v-4.03h3.35c.37 0 .68-.3.68-.68v-26.89c0-.37-.3-.67-.68-.67H130.4c-.37 0-.67.3-.67.67v32.27c0 .37.3.67.67.67h26.9a2.02 2.02 0 0 0 0-4.03z">
+                    </path>
+                    <path id="hoa9b"
+                      d="M120.3 568.65c0-3.35.9-7.4 2.02-7.4s2.02 4.05 2.02 7.4a2.02 2.02 0 0 1-4.05 0zm13.5-28.27v-2.02h4.73c.37 0 .68-.3.68-.67v-.67h2.7v.67c0 .37.3.67.68.67h4.72v1.35h-11.48a.67.67 0 1 0 0 1.35h16.89v27.92a.67.67 0 0 0 1.35 0v-28.6c0-.37-.3-.67-.68-.67h-4.72v-2.02c0-.37-.3-.67-.68-.67h-4.73v-.68c0-.37-.3-.67-.67-.67h-4.06c-.37 0-.67.3-.67.67v.68h-4.73c-.38 0-.68.3-.68.67v2.02h-4.73c-.37 0-.67.3-.67.67v34.34h-4.06v-2.76a3.38 3.38 0 0 0 2.7-3.3c0-.09-.03-8.75-3.37-8.75-3.34 0-3.38 8.66-3.38 8.75a3.38 3.38 0 0 0 2.7 3.3v2.76h-2.02a.67.67 0 1 0 0 1.35h8.1c.38 0 .68-.3.68-.68v-34.33h4.73c.37 0 .67-.3.67-.68z">
+                    </path>
+                  </defs>
+                  <g>
+                    <g transform="translate(-119 -535)">
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#hoa9a"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#hoa9b"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">Building</span>
+            </th>
+            </button>
+          </tr>
+          <tr>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"><svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 41 41">
+                  <defs>
+                    <path id="i4mua"
+                      d="M157.95 667.5h-2.01v-23.56c0-.38-.3-.68-.68-.68h-32.28c-.38 0-.68.3-.68.68v23.56h-2.01v-27.2l18.82-10.4 18.84 11.05zm1.03-27.51l-19.52-11.45a.67.67 0 0 0-.66 0l-19.51 10.77a.67.67 0 0 0-.35.59v28.27c0 .38.3.68.67.68h3.37c.37 0 .67-.3.67-.68v-23.56h30.95v23.56c0 .38.3.68.67.68h3.37c.37 0 .67-.3.67-.68v-27.6a.67.67 0 0 0-.33-.58z">
+                    </path>
+                    <path id="i4mub"
+                      d="M152.1 667.48h-6.83v-6.83h6.83v6.83zm.68-8.2h-8.2c-.37 0-.68.3-.68.68v8.2c0 .38.3.69.68.69h8.2c.38 0 .68-.3.68-.69v-8.2c0-.37-.3-.68-.68-.68z">
+                    </path>
+                    <path id="i4muc"
+                      d="M149.4 660.35v1.91h-1.42v-1.91h-1.42v2.55c0 .35.32.64.7.64h2.84c.4 0 .7-.29.7-.64v-2.55z">
+                    </path>
+                    <path id="i4mud"
+                      d="M144.12 667.48h-6.82v-6.83h6.82zm.69-8.2h-8.2c-.37 0-.68.3-.68.68v8.2c0 .38.3.69.68.69h8.2c.38 0 .68-.3.68-.69v-8.2c0-.37-.3-.68-.68-.68z">
+                    </path>
+                    <path id="i4mue"
+                      d="M141.42 660.35v1.91h-1.41v-1.91h-1.42v2.55c0 .35.32.64.7.64h2.84c.4 0 .7-.29.7-.64v-2.55z">
+                    </path>
+                    <path id="i4muf"
+                      d="M152.1 659.51h-6.83v-6.83h6.83v6.83zm.68-8.2h-8.2c-.37 0-.68.3-.68.68v8.2c0 .38.3.69.68.69h8.2c.38 0 .68-.3.68-.69V652c0-.37-.3-.68-.68-.68z">
+                    </path>
+                    <path id="i4mug"
+                      d="M149.4 651.84v1.91h-1.42v-1.91h-1.42v2.55c0 .35.32.64.7.64h2.84c.4 0 .7-.29.7-.64v-2.55z">
+                    </path>
+                    <path id="i4muh" d="M123.19 650.24v-1.59h32.4v1.59z"></path>
+                    <path id="i4mui" d="M123.19 647.58v-1.59h32.4v1.59z"></path>
+                    <path id="i4muj"
+                      d="M141.51 640.86h-5.31v-1.42h5.31zm.66-2.84h-6.64c-.36 0-.66.32-.66.7v2.84c0 .4.3.71.66.71h6.64c.37 0 .67-.32.67-.7v-2.84c0-.4-.3-.71-.67-.71z">
+                    </path>
+                  </defs>
+                  <g>
+                    <g transform="translate(-119 -628)">
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mua"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mub"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4muc"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mud"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mue"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4muf"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mug"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4muh"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4mui"></use>
+                      </g>
+                      <g opacity=".4">
+                        <use fill="#b12a32" xlink:href="#i4muj"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">Warehouse</span>
+            </th>
+            </button>
+            <th id="thprop">
+              <button onclick="btn01()" id="_btn1"> <svg xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 46 37">
+                  <defs>
+                    <path id="qtksa"
+                      d="M459.89 663.95c-1.43-4.67-1.75-9.54-2.78-14.3-.47-2.2-1.31-6.21-3.73-7.27-1.44-.63-2.73.36-3.7 1.35-1.78 1.82-3 4-5.05 5.46-2.75-6.08-2.57-13.46-7.75-18.26-.51-.47-1.2-.44-1.7 0-7.27 6.24-6.98 16.82-11.3 24.8-1.4-2.78-4.03-7.17-6.2-4.52-1.63 1.99-1.88 4.68-2.48 7.1-.53 2.18-1.28 4.89-.63 7.12.16.56.58.8 1 .8.05.03.08.06.13.07 4.25 1.16 8.64.82 12.98.45 3.86-.33 7.7-.43 11.57-.62 3.25-.16 6.5-.42 9.75-.49 1.54-.03 3.07.02 4.6.15 1.35.1 2.7.84 4.01.7.7-.07 1.26-.7 1.05-1.38.25-.28.37-.68.23-1.16z">
+                    </path>
+                  </defs>
+                  <g>
+                    <g opacity=".4" transform="translate(-414 -630)">
+                      <use fill="#b12a32" xlink:href="#qtksa"></use>
+                    </g>
+                  </g>
+                </svg></span> <span class="value_to_save">Land</span>
+            </th>
+            </button>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      function btn01() {
+        document.getElementById("Prop_kind").innerHTML = "";
+      }
+    </script>
+
+    <div id="prop-location">
+      <br />
+      <h2 class="subtitle">Enter the property's location:</h2><br />
+      <div id="locations_container">
+        <button class="cta" onclick="btn02()" id="_btn2">Beirut</button>
+        <button class="cta" onclick="btn02()" id="_btn2">Mount</button>
+        <button class="cta" onclick="btn02()" id="_btn2">North</button>
+        <button class="cta" onclick="btn02()" id="_btn2">Bekaa</button>
+        <button class="cta" onclick="btn02()" id="_btn2">Nabatieh</button>
+        <button class="cta" onclick="btn02()" id="_btn2">South</button>
+      </div>
+    </div>
+    <script>
+      function btn02() {
+        document.getElementById("prop-location").innerHTML = "";
+      }
+    </script><br />
+    <div id="prop-village">
+      <h2 class="subtitle"> What's the name of the village or city?</h2>
+      </br>
+      <input type="text" alt="village/city"><span><button onclick="btn03()" class="cta"
+          id="_btn3"><span>Submit</span></button></span>
+      <script>
+        function btn03() {
+          document.getElementById("prop-village").innerHTML = "";
+        }
+      </script>
+    </div><br />
+    <div id="personal_info">
+      <h2 class="subtitle">Please enter the following info</h2><br />
+      <form action="/action_page.php">
+        <tr>
+          <input type="text" id="fname" name="fname" placeholder="First Name*"><br><br>
+        </tr>
+        <tr>
+          <input type="text" id="lname" name="lname" placeholder="Last Name*"><br><br>
+        </tr>
+        <tr>
+          <input type="number" id="phone_number" name="phone" placeholder="Phone number*"><br><br>
+        </tr>
+        <button class="cta" type="button" onclick="btn04()" id="_btn4">Submit</button>
+
+        <script>
+          function btn04() {
+            document.getElementById("personal_info").innerHTML = "";
+
+          }
+          function btn04() {
+            alert("Thank You for your time ") + document.getElementById("fname") + (" We will inform you soon with our feedback");
+          }
+        </script>
+      </form>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- Porfolio Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/verticalphoto.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>Us</span></h1>
+        <h2>Real Estate Company</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
+          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+          reprehenderit libero enim!</p>
+        <a href="#about" class="cta">Download File</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>01-XXX XXX</h2>
+            <h2>03-XXX XXX</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>info@gmail.com</h2>
+            <h2>abcd@gmail.com</h2>
+
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Beirut, Lebanon</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>R</span>eal <span>E</span>state</h1>
+      </div>
+      <h2>For A Better Future</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1635585298&extra_1=s%7Cc%7C356261863893%7Ce%7Cfacebook%20%27%7C&placement=&creative=356261863893&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D1635585298%26adgroupid%3D63029873896%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-360705453827%26loc_physical_ms%3D1009901%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA4rGCBhAQEiwAelVti3KfET6FT28WKAfx-CssdQ8M8fJEanShmn2mPvJyoe0bAueuILmEGBoCW78QAvD_BwE"
+            target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/" target="_blank"><img
+              src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/?lang=en" target="_blank"><img
+              src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+
+      </div>
+      <p>Copyright © 2020 Real Estate. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
