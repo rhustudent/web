@@ -1,11 +1,13 @@
 # CCEE411 - Web Project
 
-by rhu students
+by RHU students
 
-Step 1: clone file and paste in xampp/htdocs
+STEP 1: clone file and paste in xampp/htdocs
 
-Step 2: create new db in PHPMyAdmin, name it "data", or name it as you like by editing config.php
+STEP 2: create new db in PHPMyAdmin, name it "data", or name it as you like by editing config.php
 
-Step 3: import data_table.sql into db
+STEP 3: import data_table.sql into db
 
-step 4: run localhost/finaldraft 
+STEP 4: run apache and mysql (xamp)
+
+STEP 5: go to localhost/finaldraft 
